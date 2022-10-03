@@ -26,7 +26,7 @@ const Home = ({pageInfo, skills, experiences, projects, socials}:Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#FCAB0A]/80'>
       <Head>
-        <title>Mani's Portfolio</title>
+        <title>Mani{`&#39;`} Portfolio</title>
       </Head>
         <Header socials ={socials } />
       {/* Hero */}
