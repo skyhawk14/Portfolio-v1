@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { PageInfo } from '../typings'
+import { urlFor } from '../sanity'
 type Props = {
     pageInfo: PageInfo
 }
@@ -26,7 +27,7 @@ const About = ({ pageInfo}: Props) => {
               viewport={{
                   once: true
               }}
-              src='./profile_photo.jpg'
+              src={urlFor(pageInfo?.heroImage).url()}
               className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg my-2 mx-5
               md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]
           "/>
