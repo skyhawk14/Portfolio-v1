@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { groq } from 'next-sanity';
-import { type } from 'os';
 import { sanityClient } from '../../sanity';
 import { Project } from '../../typings';
 

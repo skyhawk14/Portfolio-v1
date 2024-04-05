@@ -37,3 +37,4 @@ sanity/node_modules
 *.tsbuildinfo
 next-env.d.ts
 
+sanity/.env

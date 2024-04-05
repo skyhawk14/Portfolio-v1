@@ -24,7 +24,7 @@ function Hero({pageInfo }: Props) {
       <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src={ urlFor(pageInfo?.heroImage).url()} alt="testing" />
           <div className='z-20'>
               <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
-                  ${pageInfo?.role}
+                  {pageInfo?.role}
                 </h2>
                 <h1 className='text-3xl lg:text-6xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>

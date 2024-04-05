@@ -29,7 +29,7 @@ function Header({socials}: Props) {
                 {/* Social icons */}
                 {
                     socials.map((social) => {
-                        return (<SocialIcon key={social._id} url={ social.url} fgColor='gray' bgColor='transparent' />)
+                        return (<SocialIcon target="_blank" key={social._id} url={ social.url} fgColor='gray' bgColor='transparent' />)
                     })
                 }
             </motion.div>

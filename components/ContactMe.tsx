@@ -15,7 +15,10 @@ function ContactMe({ }: Props) {
         handleSubmit
     } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (data) => { 
-        window.location.href = `mailto:bhushan.mani72@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`;
+        // window.open(`mailto:bhushan.mani72@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`)
+        const test = "mailto:bhushan.mani72@gmail.com?subject="+data.subject+'&body='+"Hi, my name is"+data.name+"."+data.message;
+        location.href = "mailto:bhushan.mani72@gmail.com?subject="+data.subject+'&body='+"Hi, my name is"+data.name+"."+data.message;
+        window.open(test, '_blank')
     };
   return (
       <div className='h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
@@ -30,7 +33,7 @@ function ContactMe({ }: Props) {
               <div className='space-y-10'>
                   <div className='flex items-center space-x-5 justify-center'>
                       <PhoneIcon className='text-[#FCAB0A]/40 h-7 w-7 animate-pulse'/>
-                      <p className='text-2xl'>+12345677</p>
+                      <p className='text-2xl'>+917905873539</p>
                   </div>
                   <div className='flex items-center space-x-5 justify-center'>
                       <EnvelopeIcon className='text-[#FCAB0A]/40 h-7 w-7 animate-pulse'/>
@@ -38,7 +41,7 @@ function ContactMe({ }: Props) {
                   </div>
                   <div className='flex items-center space-x-5 justify-center'>
                       <MapPinIcon className='text-[#FCAB0A]/40 h-7 w-7 animate-pulse'/>
-                      <p className='text-2xl'>123 develop lane</p>
+                      <p className='text-2xl'>Mumbai, India</p>
                   </div>
               </div>
               <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>

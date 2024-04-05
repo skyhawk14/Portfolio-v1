@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.11",
     "@portabletext/react": "^1.0.6",
     "@sanity/image-url": "^1.0.1",
+    "dotenv": "^16.4.5",
     "framer-motion": "^7.5.0",
     "i": "^0.3.7",
     "next": "12.3.1",
